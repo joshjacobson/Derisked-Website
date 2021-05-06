@@ -3,7 +3,7 @@ layout: full-width
 title: About
 ---
 
-Derisked is a new project by Josh Jacobson ([Email](mailto:Josh@Derisked.org), [LinkedIn](https://www.linkedin.com/in/joshmjacobson/)). 
+Derisked is a new project by Josh Jacobson ([Email](mailto:Josh@Derisked.org){:target="_blank"}, [LinkedIn](https://www.linkedin.com/in/joshmjacobson/){:target="_blank"}).
 
 It was started on the notion that:
 
