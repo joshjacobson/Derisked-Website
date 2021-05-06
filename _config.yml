@@ -1,4 +1,4 @@
-baseurl: /Derisked-Website
+baseurl: /Derisked-Website/
 title: Derisked
 subtitle: 
 author: Josh Jacobson
@@ -24,4 +24,4 @@ transfer:
   command: rsync
   settings: -av
   source: _site/
-  destination: ~/Git/clayh53.github.com/
+  destination: ~/Git/joshjacobson.github.com/
