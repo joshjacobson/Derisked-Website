@@ -92,7 +92,7 @@ Combinations of detectors I believe become the sum of their parts. So installing
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "7e7d164a72524914a609a9747e625049", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "assets/Smoke Detector Comparison.pdf"}},
+			content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
 			metaData:{fileName: "Bodea Brochure.pdf"}
 		}, {embedMode: "IN_LINE"});
 	});
