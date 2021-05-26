@@ -85,7 +85,7 @@ Combinations of detectors I believe become the sum of their parts. So installing
 
 <!--<embed src="assets/Smoke Detector Comparison.pdf" width="500" height="375"  type="application/pdf">-->
 
-<!--<iframe src="http://docs.google.com/gview?url=http://derisked.org/assets/Smoke%20Detector%20Comparison.pdf&embedded=true" style="width:55%; height: 25rem" frameborder="0"></iframe>-->
+<iframe src="http://docs.google.com/gview?url=http://derisked.org/assets/Smoke%20Detector%20Comparison.pdf&embedded=true" style="width:55%; height: 25rem" frameborder="0"></iframe>
 <div id="adobe-dc-view" style="height: 25rem; width: 55%;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
@@ -97,7 +97,7 @@ Combinations of detectors I believe become the sum of their parts. So installing
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
 </script>
-<!--<div id="adobe-dc-view" style="width: 800px;"></div>
+<div id="adobe-dc-view" style="width: 800px;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
