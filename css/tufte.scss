@@ -241,7 +241,8 @@ section { padding-top: 1rem;
 ul,ol { width: 45%;
      -webkit-padding-start: 5%;
      -webkit-padding-end: 5%;
-     list-style-type: none; }
+     //list-style-type: none; 
+     }
 
 //li { padding: 0.5em 0; } //vertical padding on list items screws up vertical rhythym
 
@@ -644,3 +645,48 @@ hr.slender {
   content: "\eae4";
 }
 /*-- End of Icomoon icon font section --*/
+
+/*-- Custom CSS --*/
+
+li > ol, li > ul, li > p { 
+  width: 100%;
+}
+
+/*-- TO-DO for LW-style TOC --*/
+// make overflow of a line item be grouped rather than look same as new bullet
+// develop media queries for it to look good, including disappearance or integration as openable menu
+// ALTERNATIVELY: Just implement top banner and iframe GDocs or LW (with note about not being affiliated / not being in control of website, etc.)
+// - banner can be taken from how to live site
+
+/*--
+@media screen and (min-width: 800px){ html{ font-size: 12px;} }
+
+@media screen and (min-width: 900px){ html{ font-size: 13px;} }
+
+@media screen and (min-width: 1000px){ html{ font-size: 14px;} }
+
+@media screen and (min-width: 1100px){ html{ font-size: 15px; } }
+
+@media screen and (min-width: 1200px){ html{ font-size: 16px; } }
+
+@media screen and (min-width: 2027px){ #markdown-toc{ width: 15%; } }
+
+
+#markdown-toc {
+  position: fixed;
+  left: 0;
+  clear: left;
+  font-size: 1.0rem;
+  line-height: 1.96; //changed to bring line heights into rational pattern
+  vertical-align: baseline;
+  font-family: et-bembo-roman-old-style;
+  color: $contrast-color;
+}
+
+#markdown-toc li, #markdown-toc ul, #markdown-toc > ul {
+  list-style: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin-top: 0;
+  padding-left: revert;
+} --*/
