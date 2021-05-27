@@ -652,6 +652,24 @@ li > ol, li > ul, li > p {
   width: 100%;
 }
 
+@media screen and (max-width: 759px) { 
+  .custom_pdf_container { 
+    position: relative; 
+    width:90%; 
+    padding-bottom: 55%;
+    height: 0;
+  } 
+}
+
+@media screen and (min-width: 760px) { 
+  .custom_pdf_container { 
+    position: relative; 
+    width:55%; 
+    padding-bottom: 33%;
+    height: 0;
+  } 
+}
+
 /*-- TO-DO for LW-style TOC --*/
 // make overflow of a line item be grouped rather than look same as new bullet
 // develop media queries for it to look good, including disappearance or integration as openable menu
