@@ -7,9 +7,9 @@ Derisked is a new project by Josh Jacobson ([Email](mailto:Josh@Derisked.org){:t
 
 It was started on the notion that:
 
-* `-` Many people are concerned with their longevity and continued productivity
-* `-` Few have the time to look in to the many possibilities for how to optimize that
-* `-` It could be impactful to provide research & implementation assistance toward this
+* Many people are concerned with their longevity and continued productivity
+* Few have the time to look in to the many possibilities for how to optimize that
+* It could be impactful to provide research & implementation assistance toward this
 
 Therefore this project is focused on the discovery, examination, and implementation of promising, neglected physical-world interventions that can safeguard life and productivity. I will identify risks and interventions, perform literature reviews and statistical analysis to determine their cost and potential for alleviation, and produce research outputs summarizing this work and the cost-efficiency of potential risk-alleviating actions. These recommendations may be shared via forums, talks, consulting, and direct implementation.
 
