@@ -439,10 +439,9 @@ body.full-width, .content-listing, ul.content-listing li.listing{ width: 90%;
   width: 90%;
 }
 
-.full-width ul, ol {
-  width: 90%
+.full-width article ol, .full-width article ul{
+  width: 90%;
 }
-
 
 h1.content-listing-header{
   font-style: normal;
