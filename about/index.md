@@ -19,4 +19,4 @@ You may subscribe to receive updates on the project and/or content ([example](ht
 <br><br> 
 <div class="ml-form-embed"  data-account="3133918:b9d3e1c7g7"  data-form="4050427:e6c4k0">
 </div>
-Project & Management updates will only be sent to those who I approve.
+Project & Management updates are intended for a particular audience. Feel free to liberally request to be added to that list, but not all requests will be honored. (All subscribing to content updates will receive them.)
