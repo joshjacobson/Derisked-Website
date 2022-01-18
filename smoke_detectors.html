@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>An Analysis of Smoke Detectors</title>
+  <meta name="description" content="">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  
+
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="/smoke_detectors">
+
+  <link rel="alternate" type="application/rss+xml" title="Derisked" href="/feed.xml" />
+
+  <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="noHcrFbpxlzY6Fz4Pq4uO6Za0Lvtn1v6";analytics.SNIPPET_VERSION="4.13.2";
+  analytics.load("noHcrFbpxlzY6Fz4Pq4uO6Za0Lvtn1v6");
+  analytics.page();
+  }}();
+</script>
+
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '3133918', 'b9d3e1c7g7', 'load');
+</script>
+<!-- End MailerLite Universal -->
+
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<!--<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>
+	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/index%202.html">blog</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/smoke_detectors" class="active">An Analysis of Smoke Detectors</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/index%202.html">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/index%203.html">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/index%203.html">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/smoke_detectors" class="active">An Analysis of Smoke Detectors</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/index%204.html">blog</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/smoke_detectors" class="active">An Analysis of Smoke Detectors</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/index%204.html">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/smoke_detectors" class="active">An Analysis of Smoke Detectors</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/smoke_detectors" class="active">An Analysis of Smoke Detectors</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a class="active" href="/smoke_detectors" class="active">An Analysis of Smoke Detectors</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%202.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%203.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%204.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%205.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%206.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%207.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2%208.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/index2.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print%202.css"></a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print%203.css"></a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print%204.css"></a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print%205.css"></a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%202.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%203.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%204.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%205.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%206.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%207.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test%208.html">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/test.html">page</a>
+		    
+	    
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	 -->
+	</nav> 
+</header>
+    <article class="group">
+      <h1>An Analysis of Smoke Detectors</h1>
+<p class="subtitle"></p>
+
+<!--- This will become a table of contents (this text will be scrapped).
+* {:toc} -->
+
+<h2 id="summary">Summary</h2>
+
+<p>For a 28 year old<label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle" /><span class="sidenote">This age was chosen since <a href="https://forum.effectivealtruism.org/posts/wtQ3XCL35uxjXpwjE/ea-survey-2019-series-community-demographics-and#Age">it is the median age of effective altruists</a>, and therefore presumably near the median for the LW community as well. For those aged 18, I estimate ~1.7-2 days saved, for those aged 40, I estimate 0.7-0.9 days saved, based on CDC life-expectancy. </span> living in the US, I estimate ~1.2-1.4 days of their life can be saved in expectation by ensuring they have working smoke detectors in their home.<label for="2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="2" class="margin-toggle" /><span class="sidenote">Versus not having functional detectors. Approximated as the failure rate of wired alarms. This may be an underestimate if frequent checking of smoke detectors cannot approach that reliability. It may be an overestimate if other efforts, such as testing functionality with a spray or Nest Protect’s self-testing, help reduce the ‘unpreventable’ failure percent. </span> <br />
+ <br />
+Smoke detectors<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle" /><span class="sidenote">I use the terms smoke alarms and some detectors interchangeably here, although strictly speaking, they are not necessarily synonymous. </span> have meaningful variance <a href="https://imgur.com/aIyl5pV">along a number of dimensions</a>, and maintenance time costs in particular can be substantial over your lifetime. I recommend you:</p>
+
+<ol>
+  <li>
+    <p>Use this <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/copy">Smoke Detector Valuation Tool</a><label for="4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="4" class="margin-toggle" /><span class="sidenote">Asks you to make a copy. To view without making a copy, <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/">click this link</a>. </span> I’ve created to obtain a personalized estimate for the costs and benefits of smoke detector installation and maintenance</p>
+  </li>
+  <li>
+    <p>Paste the results into the Valuation of Time Tool I built to understand how worthwhile time spent on this is, and which detector is most worthwhile.<label for="5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="5" class="margin-toggle" /><span class="sidenote">There are some significant limitations to this analysis; see remainder of this post for more info. </span>
+Below I describe my research, provide ranked actions to take, include additional information on smoke detector selection, and place this research in context.</p>
+  </li>
+</ol>
+
+<p><em>I am not a fire safety professional and this should not be considered safety advice. I encourage you to seek out official sources as is applicable.</em></p>
+
+<h2 id="research-findings">Research Findings</h2>
+
+<h3 id="safety-relevant-findings">Safety-Relevant Findings</h3>
+
+<ol>
+  <li>
+    <p>41% of home fire deaths are expected to be preventable via the installation of smoke detectors. An additional 16% are expected to be preventable if installed smoke detectors operate as expected.<label for="6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="6" class="margin-toggle" /><span class="sidenote"><a href="https://www.nfpa.org//-/media/Files/News-and-Research/Fire-statistics-and-reports/Detection-and-signaling/ossmokealarms.pdf">NFPA 2021</a> </span></p>
+  </li>
+  <li>
+    <p>Amongst those that have smoke detectors installed, reasons for failure resulting in death are:<label for="7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="7" class="margin-toggle" /><span class="sidenote"><a href="https://www.nfpa.org//-/media/Files/News-and-Research/Fire-statistics-and-reports/Detection-and-signaling/ossmokealarmstables.pdf">NFPA</a>. Notably this list does not include the potential for a reason to be type-of-detector installed, but there are other suggestions in this report and other research of detector type having a meaningful effect. </span></p>
+
+    <ol>
+      <li>Missing or disconnected battery (66%)</li>
+      <li>Dead or discharged battery (13%)</li>
+      <li>Unclassified reason (7%)</li>
+      <li>Hardwired power failure (7%)</li>
+      <li>Improper installation or placement (4%)</li>
+      <li>Lack of cleaning (3%)</li>
+      <li>Defective unit (1%)</li>
+    </ol>
+  </li>
+  <li>
+    <p>There are two primary categories of fire, and different types of sensor have greater likelihood in detecting the different types of fire. As a result, most official sources<label for="8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="8" class="margin-toggle" /><span class="sidenote"><a href="https://www.nfpa.org/Public-Education/Staying-safe/Safety-equipment/Smoke-alarms/Installing-and-maintaining-smoke-alarms">NFPA Example</a> </span> recommended installing dual sensor alarms. I also have not found explicit estimates of the lifesaving potential, but there’s meaningful evidence that these provide additional significant safety benefit.</p>
+
+    <ol>
+      <li>There’s some evidence that these provide earlier alert and additional time to escape.<label for="9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="9" class="margin-toggle" /><span class="sidenote"><a href="https://www.google.com/url?q=https://www.youtube.com/watch?v%3DaDNPhq5ggoE&amp;sa=D&amp;source=editors&amp;ust=1621903902254000&amp;usg=AOvVaw0NHegNIr69MlnnGb5RJucL">This video</a> can give you a visceral sense of how quickly a fire can progress. </span> <a href="https://imgur.com/IVc4jd2">These charts</a> represent test results of the likelihood of escape if less mobile (age, disability) based on detector type by smoke density and fire type. While less dramatic, those who are mobile or moderately mobile <a href="https://imgur.com/a/TKLymWU">were also found more likely to escape</a> with dual sensor detectors under certain conditions as well.<label for="10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="10" class="margin-toggle" /><span class="sidenote"><a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=906889">Cleary (NIST)</a> </span> I was unable to definitively determine how often conditions are such that one type of detector performs much better than another, but dual detectors have had a significantly lower share of deaths vs. fires than have single sensor detectors.<label for="11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="11" class="margin-toggle" /><span class="sidenote"><a href="https://www.nfpa.org//-/media/Files/News-and-Research/Fire-statistics-and-reports/Detection-and-signaling/ossmokealarmstables.pdf">NFPA</a> p. 4. See also, if interested, <a href="https://wahigroup.com/Resources/Documents/Ion%20vs%20Photo%20Smoke%20Alarms%20WAHI%20Conference%20Slides%20031415.pdf">this dramatic presentation</a> particularly arguing for the importance of a photoelectric sensor. </span></li>
+    </ol>
+  </li>
+  <li>
+    <p>Some smoke detectors are interconnected so that if one detects smoke, the entire system rings an alarm. These seem likely to have some meaningful safety benefit.</p>
+    <ol>
+      <li>I did not locate explicit estimates for the ability of this to potentially save someone’s life, but I did find an estimate that up to ½ of deaths are theoretically avoidable with earlier notice of a fire, and ⅔ of injuries.<label for="12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="12" class="margin-toggle" /><span class="sidenote"><a href="https://link.springer.com/content/pdf/10.1023/B:FIRE.0000016839.11376.b3.pdf">Hall</a>. Represents an upper bound rather than estimate. </span> <a href="https://imgur.com/CIbydT9">This figure</a><label for="13" class="margin-toggle sidenote-number"></label><input type="checkbox" id="13" class="margin-toggle" /><span class="sidenote"><a href="https://www.nfpa.org//-/media/Files/News-and-Research/Fire-statistics-and-reports/Detection-and-signaling/ossmokealarms.pdf">NFPA</a> pg. 7 </span> suggests that interconnected alarms are more likely to sound, alert occupants, and be the only alert that they receive than alarms that are not interconnected. And <a href="https://www.ifv.nl/advieseninnovatie/Documents/20160725-BA-Towards-a-sound-understanding-of-the-effectiveness-of-smoke-detectors-in-dwellings.pdf">at least one study</a> has performed tests that find that interconnected alarms are likely to provide significantly earlier notice of a fire, increasing the likelihood of escape, under some conditions.</li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="actions-to-take">Actions to Take</h3>
+
+<p>As a result, I believe the highest priority actions to potentially take regarding smoke detectors, ranked, are:</p>
+
+<ol>
+  <li>Install smoke detectors if not installed</li>
+  <li>Pursue ‘convenience’ and/or perform needed power-related maintenance:
+    <ol>
+      <li>Standard guidelines from official sources include monthly detector testing, annual battery replacement for most alarms, and replacing alarms every 10 years. If you have or purchase typical detectors with replaceable batteries, following these guidelines is the second most valuable action to take.</li>
+      <li>Alternatively, if you have or purchase detectors with higher assurance of being powered (see next section), you may decide that you can perform less maintenance than you would otherwise.</li>
+      <li>
+        <p>You may also or instead find that redundancy is a convenient approach to greater safety. To illustrate this, if you were to purchase two detectors for each installation location, and were somehow able to eliminate correlations between them,<label for="14" class="margin-toggle sidenote-number"></label><input type="checkbox" id="14" class="margin-toggle" /><span class="sidenote">To a significant extent, this is impossible, as factors such as temperature and humidity will be similar for two detectors at the same location. But installing different models/brands of detector with different power sources does help provide some independence. </span> the estimated <a href="https://dps.mn.gov/divisions/sfm/for-families/Documents/Home%20Fire%20Safety%20Information/smokedetectorreplacement.pdf">3% annual ‘random failure rate’</a> would effectively only be 0.09%. Similarly, the batteries on 10-year sealed battery alarms seemingly last 10 years only ~75% of the time, but with two detectors in each location the likelihood of at least one lasting 10 years (if independence could be achieved, which it can’t),<sup>12</sup> would be 6.25%. Although correlations cannot be eliminated, I still expect that on average ~80% of the benefits of redundancy can be captured (though this estimate is highly uncertain, and the expected benefit is lower for places with particular environmental effects).</p>
+      </li>
+      <li>Finally, detectors that are less likely to sound nuisance alarms (e.g. due to cooking) are more convenient and less likely to be disabled or removed.</li>
+    </ol>
+  </li>
+  <li>Ensure <a href="https://www.nfpa.org/Public-Education/Staying-safe/Safety-equipment/Smoke-alarms/Installing-and-maintaining-smoke-alarms">proper quantity and placement</a></li>
+  <li>
+    <p>Use detectors with added safety features<label for="15" class="margin-toggle sidenote-number"></label><input type="checkbox" id="15" class="margin-toggle" /><span class="sidenote">This is referring to dual sensors and interconnectedness. Additionally, I did not research CO detection, but I assume that there’s a benefit to having a smoke-CO combination detector. </span></p>
+  </li>
+  <li>Consider performing <a href="https://ahiconsulting.com/why-and-how-to-clean-your-smoke-detectors/">other maintenance</a> <a href="https://www.amazon.com/Smoke-Detector-Tester-10/dp/B0195UX2D2/ref=sr_1_16?dchild=1&amp;keywords=smoke+detector+test&amp;qid=1617216123&amp;sr=8-16">or testing</a></li>
+</ol>
+
+<p>You may want to consider replacing or augmenting existing detectors accordingly.<label for="16" class="margin-toggle sidenote-number"></label><input type="checkbox" id="16" class="margin-toggle" /><span class="sidenote">Particularly if they score poorly on the detector buying guide, e.g. are replaceable battery-powered, <a href="https://www.courant.com/business/hc-xpm-2013-09-07-hc-bottom-line-smoke-alarms-20130907-story.html">ionization sensor-only</a>, etc. </span> Additionally, consider other fire safety interventions.<label for="17" class="margin-toggle sidenote-number"></label><input type="checkbox" id="17" class="margin-toggle" /><span class="sidenote">I have not investigated these on my own, but buying fire extinguishers, fire blankets, N95 masks, fire ladders, <a href="https://closeyourdoor.org/">closing bedroom doors</a>, and fire sprinklers are amongst the interventions I’ve heard about previously. I like <a href="https://www.amazon.com/Mini-Firefighter-MFF02-Extinguisher-Eliminator/dp/B0721HGK52/ref=sr_1_16?crid=2KXLY1ODSSP7F&amp;dchild=1&amp;keywords=kitchen+fire+extinguisher&amp;qid=1617216710&amp;sprefix=kitchen+fire+ex%2Caps%2C210&amp;sr=8-16">fire extinguishers rated A, B, C, and K</a>, since unlike most, they can be used everywhere, including in kitchen fires. You may also want to consider only staying in homes / rooms <a href="https://injuryprevention.bmj.com/content/25/4/328.abstract">outside of your residence</a> that have smoke detectors installed. The Valuation of Time tool may be helpful for calibrating on how much time and money investment is appropriate for your situation. </span></p>
+
+<h3 id="detector-buying-guide">Detector Buying Guide</h3>
+
+<p>This buying guide<label for="pdf" class="margin-toggle sidenote-number"></label><input type="checkbox" id="pdf" class="margin-toggle" /><span class="sidenote"><a href="http://derisked.org/assets/Smoke%20Detector%20Comparison.pdf">Click for a Larger View</a> </span> can help simplify your purchasing decision. <a href="https://docs.google.com/document/d/1z7SbQSr1brsRx2aH-dteCOcfRnPhIoAKU0S8gFyCsbI/edit?usp=sharing">See this link</a> for some non-US purchasing recommendations.</p>
+
+<div class="custom_pdf_container"><iframe class="custom_pdf" src="http://docs.google.com/gview?url=http://derisked.org/assets/Smoke%20Detector%20Comparison.pdf&amp;embedded=true" frameborder="0" style="position: absolute; left:0; width: 100%; height: 100%; background: none;"></iframe></div>
+
+<p>I expect that redundancy (buying two detectors for each installation location of the same type, but different brand &amp; batteries), increases the ‘Overall’ grade by ⅓ to ⅔ on average, <a href="https://gpacalculator.net/wp-content/uploads/2012/07/grade-point-equivalent.png">on the GPA system</a> (two B+ detectors becomes an A- or A).</p>
+
+<p>Combinations of detectors I believe become the sum of their parts. So installing two replaceable battery powered single sensor alarms, one with an ionization sensor and one with a photoelectric sensor, becomes the approximate equivalent of the “Replaceable Battery Powered 2-in-1”, and thus graded C.</p>
+
+<!--<embed src="assets/Smoke Detector Comparison.pdf" width="500" height="375"  type="application/pdf">-->
+
+<p><br />
+To be clear, any smoke detector is better than having none. If you have trouble finding a strongly graded detector,<label for="18" class="margin-toggle sidenote-number"></label><input type="checkbox" id="18" class="margin-toggle" /><span class="sidenote">Or achieving the same via combination / redundancy. </span> can’t afford it, or don’t feel it is worth more than minuscule amounts of time, I encourage you to, at a minimum, <a href="https://www.nfpa.org/Public-Education/Staying-safe/Safety-equipment/Smoke-alarms/Installing-and-maintaining-smoke-alarms">buy sufficient quantity of any</a> detector and install them if not already present. Most detectors do seem to work ok in many situations. That said, there’s various significant benefits to making a better purchasing decision as previously outlined and further described below. <br />
+ <br />
+<strong>Buying guide footnotes:</strong></p>
+
+<ul>
+  <li>
+    <p>These grades are subjective, and your priorities when considering the various features / costs of detectors may differ. You may want to consider additional information, such as reviews of the detectors, as well.</p>
+  </li>
+  <li>
+    <p>Has battery backup to hardwired power; an important quality for any hardwired detector</p>
+  </li>
+</ul>
+
+<p><br />
+1     Hardwired detectors, particularly those with battery backups, are much more likely to be receiving power when needed than solely battery-powered models. While 10-year sealed battery detectors sometimes don’t last a full 10 years (~75% of the time they seem to last that long), they’re more reliably powered than those with 9V, AA, or AAA batteries. It’s unclear if this would be the case if users were highly diligent (e.g. reliably replacing batteries every year). Since Nest Protect checks the battery many times per day and notifies you if there’s an issue, I expect it to be more reliably powered than other battery models.<label for="19" class="margin-toggle sidenote-number"></label><input type="checkbox" id="19" class="margin-toggle" /><span class="sidenote">Wirecutter is also <a href="https://www.nytimes.com/wirecutter/blog/get-a-smart-smoke-detector/">particularly enthusiastic</a> about the benefits of Nest Protect. </span></p>
+
+<p>2     Nest Protect has <a href="https://support.google.com/googlenest/answer/9249963?hl=en">a unique sensor meant to detect fast fires</a>, rather than an ionization sensor. I’m deferring to their assessment that this is successful at a similar rate to an ionization sensor; it may or may not be and there is less real-world, public evidence of its effectiveness. Detectors with both ionization and photoelectric sensors, or heat and photoelectric sensors<label for="20" class="margin-toggle sidenote-number"></label><input type="checkbox" id="20" class="margin-toggle" /><span class="sidenote">Other links / references support the benefit of ionization + photoelectric dual sensor detectors. Pg. 4 of <a href="https://www.nfpa.org//-/media/Files/News-and-Research/Fire-statistics-and-reports/Detection-and-signaling/ossmokealarmstables.pdf">this report</a> provides some evidence of heat + photoelectric being valuable as well, and UK detector websites specifically cite heat sensors as detecting the same fires ionization ones are strong at sensing. </span>, receive the highest rating. Amongst single sensor models, there’s <a href="http://neafpsd.com/2006SymposiumPowerPoints/NFPA%20Final%20Smoke%20revisited.doc">reason to believe photoelectric models</a> <a href="https://www.courant.com/business/hc-xpm-2013-09-07-hc-bottom-line-smoke-alarms-20130907-story.html">should perhaps be strongly preferred over ionization models</a>, which instead dominate the market (~90% share).</p>
+
+<p><br />
+3     Official sources <a href="https://www.usfa.fema.gov/prevention/outreach/smoke_alarms.html#ans5">recommend testing that detectors are powered once per month</a>. Nest claims to perform the most important aspects of these tests <a href="https://support.google.com/googlenest/answer/9232412?co=GENIE.Platform%3DiOS&amp;oco=0">many times per day</a>, which could decrease your belief in the need to perform this monthly check. A more involved check can be automatically run once per month or <a href="https://support.google.com/googlenest/answer/9249840?hl=en#zippy=%2Cwhat-safety-checkup-tests">on demand from the app for all detectors at once</a>. These eliminate time potentially otherwise spent remembering to check once per month and walking to each detector and testing it. Hardwired detectors are more reliably powered than battery-powered alarms, so you may decide you can adopt a less maintenance-intensive schedule with those. Both hardwired and 10-year battery models require less battery replacement than replaceable battery models,<label for="21" class="margin-toggle sidenote-number"></label><input type="checkbox" id="21" class="margin-toggle" /><span class="sidenote">Replaceable battery models that take 9v batteries seem to require more maintenance and have a greater failure rate. If you do get these (or have them already), it may be worthwhile to purchase <a href="https://www.amazon.com/VONIKO-Lithium-Batteries-Volt-Pack/dp/B07YKQS6YD/ref=sr_1_5?crid=1PO9VGG9LOJ0U&amp;dchild=1&amp;keywords=10+year+9v+battery&amp;qid=1618349068&amp;sprefix=10+year+9v%2Caps%2C197&amp;sr=8-5">lithium 9v batteries</a> (they should last longer on average) and proactively replace batteries yearly (rather than waiting for the alarm to tell you the batteries are low, which may be unreliable). </span> which are meant to be replaced on an annual basis. All detectors are meant to be replaced every 10 years, although you may wish to replace 10-year sealed battery models every 5 years, or pursue redundancy, given that battery-life success at 10 years is less than ideal (~75%).</p>
+
+<p>4     Nest Protect uses machine learning to attempt to prevent nuisance alarms, which are when a detector is improperly triggered (e.g. from cooking). Any alarm that is UL 217 8th or 9th Edition certified has also passed testing showing it successfully limits the number of nuisance alarms. Other alarms are likely to have baseline levels of nuisance alarms. Mitigating these is valuable to ensuring detectors aren’t taken down or disabled in response.</p>
+
+<p>5     Battery powered detectors can be quickly and easily installed, e.g. with a simple <a href="https://www.amazon.com/Command-Picture-Decorate-Damage-Free-PH206-14NA/dp/B073XR4X72/ref=sr_1_5?dchild=1&amp;keywords=command+strips&amp;qid=1617304464&amp;sr=8-5">command strip</a> or two. Hardwired detectors are <a href="https://www.youtube.com/watch?v=gXLwCLVG_HE">somewhat more involved</a> to install, though I expect this time to be worthwhile given the benefits in safety and maintenance.</p>
+
+<p>6     I did not research CO detection as part of this, but I did limited Googling that validated CO detectors can / should be located at similar places to smoke detectors.</p>
+
+<h3 id="calculation-of-expected-gains">Calculation of Expected Gains</h3>
+
+<p>My analysis is available <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/edit?usp=sharing">at this linked Google Sheet</a>.<label for="22" class="margin-toggle sidenote-number"></label><input type="checkbox" id="22" class="margin-toggle" /><span class="sidenote">I include sources for all data, and my calculations can be viewed by clicking on the appropriate cell, so I encourage you to inspect the work’s accuracy and reasoning and provide any feedback you have. </span> In it, I calculate the annual risk of death due to residential fire in the United States. I adjust this according to reported estimates of the amount of that risk that would be alleviated by having a working smoke alarm. I use the failure rate of wired smoke detectors as a control to allow for some failure even when working to ensure smoke detectors are functional.<label for="23" class="margin-toggle sidenote-number"></label><input type="checkbox" id="23" class="margin-toggle" /><span class="sidenote">This may be an underestimate if frequent checking of smoke detectors cannot approach that reliability. It may be an overestimate if other efforts, such as testing functionality with a spray, help reduce the unpreventable failure percent. It seems to be at least somewhat reasonable based on the figures provided in the how-to section. </span></p>
+
+<p>Two contexts that seemed particularly relevant for personal risk were age and urban vs. rural residential location. Based on those under 5 being 1.5x more likely to die in a fire, and those over 65 being 2x more likely,<label for="24" class="margin-toggle sidenote-number"></label><input type="checkbox" id="24" class="margin-toggle" /><span class="sidenote"><a href="https://www.health.ny.gov/prevention/injury_prevention/children/toolkits/fire/residential_fires_impact_vunerable_populations.htm#:~:text=The%20very%20old%20and%20the,as%20compared%20the%20general%20public.">NY DOH</a> </span> I calculated the annual risk for those under 5, between 5 and 65, and those over 65. I also built an adjustment for urban vs. average risk, based on the relative presence of fire deaths per million population.<label for="25" class="margin-toggle sidenote-number"></label><input type="checkbox" id="25" class="margin-toggle" /><span class="sidenote">This is particularly questionable, as it is built on a <a href="https://www.usfa.fema.gov/downloads/pdf/statistics/rural.pdf">1999 report using data from 1983-1988</a>. Things may have changed significantly since then. </span> Finally, I built the <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/copy">Smoke Detector Tool</a> in which three of the inputs are your current age, whether or not you’re in an urban location, and the age to which you would like to project life-day gains. Given these inputs, it outputs the expected days-of-life-saved per year by working to ensure you have a functional smoke detector. These were summed to provide the example results in the summary section above. <br />
+ <br />
+Additional inputs in the <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/copy">Smoke Detector Tool</a> are “Smoke Detector Selection” and “Number of Detectors”. These affect a number of intermediate variables, such as “Installation Time per Detector”, to project monetary and time costs on an ongoing basis. These intermediate variables can optionally be further customized if desired. The outputs are structured in order to facilitate subsequent use of the Valuation of Time Tool to determine the worthwhileness when including the tool’s benefits and costs.</p>
+
+<p>To use the <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/copy">Smoke Detector Tool</a>, make a copy of it and complete the bold, blue inputs. To use the Valuation of Time Tool, see this linked post introducing it.</p>
+
+<h3 id="context">Context</h3>
+
+<p>This should be considered a shallow review. I made some effort toward ensuring data and impressions were correct, but I did not in all cases validate the data with other sources nor thoroughly examine the methodology of data collection. <br />
+ <br />
+I think the likelihood of my estimates for life-days saved being incorrect on average by more than an order of magnitude is ~7.5%,<label for="26" class="margin-toggle sidenote-number"></label><input type="checkbox" id="26" class="margin-toggle" /><span class="sidenote">This is based on personal reflection, not statistical analysis. </span> while the likelihood of these estimates being incorrect to a lesser extent is much higher.</p>
+
+<p>There are a number of factors that aren’t considered in this analysis. A list of reasons why your personal situation may be different than estimated in this tool include:</p>
+
+<ol>
+  <li>
+    <p><strong>Country</strong>: As of 2011 “The United States fire death rate is still at least double that of… Switzerland, Singapore, Austria, Italy, the Netherlands, Australia, Spain, and Germany” (<a href="https://www.usfa.fema.gov/downloads/pdf/statistics/v12i8.pdf">FEMA</a>). I did not look into the mechanism by which this occurs, nor did I quickly find more recent data, so I’m unsure how to adjust for other geographic locations. Note that without more context, this does not necessarily imply more or less smoke detector investment is needed.<label for="27" class="margin-toggle sidenote-number"></label><input type="checkbox" id="27" class="margin-toggle" /><span class="sidenote">If, for example, lower death rates are due to the population already investing in excellent smoke detectors, and you have none, there may be reason for you to invest equally or more than those in the US in smoke detectors. If it’s due to differences in home construction, and your home has that benefit, then the expected gain from smoke detectors may indeed be less. </span></p>
+  </li>
+  <li>
+    <p><strong>Personal context:</strong> Level of existing fire prevention and preparation, building material, building type, physical fitness, family context, personal expectation of longevity, and more may affect your personal risk<label for="28" class="margin-toggle sidenote-number"></label><input type="checkbox" id="28" class="margin-toggle" /><span class="sidenote"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6420922/">Paper with further discussion</a> </span> and expectation for potential life-days gain. Benefits to improved smoke detection are likely greater for those who are mobility-impaired, hearing-impaired, with situations more conducive to more fire or less likelihood of fire detection, and/or those who sleep soundly<label for="29" class="margin-toggle sidenote-number"></label><input type="checkbox" id="29" class="margin-toggle" /><span class="sidenote">If you sleep soundly, I recommend particularly prioritizing interconnected alarms with one in the bedroom. You may also want to look into bed-shaking listeners (<a href="https://www.amazon.com/SafeAwake-Fire-Alarm-Aid-Shaker/dp/B085W8QKTC/ref=pd_di_sccai_1/146-9623527-5432731?pd_rd_w=7XRTu&amp;pf_rd_p=c9443270-b914-4430-a90b-72e3e7e784e0&amp;pf_rd_r=QD9YZ3EQVDPP4BQ2P5WD&amp;pd_rd_r=2defbd69-9f4a-4773-b4c6-c4f07ed2d002&amp;pd_rd_wg=a1tOM&amp;pd_rd_i=B085W8QKTC&amp;psc=1">1</a>, <a href="https://www.amazon.com/HomeAware-Signaler-Built-Listener-Shaker/dp/B07DTKFBTB/ref=sr_1_4?dchild=1&amp;keywords=bed+shaker+smoke&amp;qid=1621881378&amp;sr=8-4">2</a>, <a href="https://www.amazon.com/Lifetone-HLAC151-Bedside-Alarm-Shaker/dp/B07ZL4H7Q7/ref=sr_1_2?dchild=1&amp;keywords=bed+shaker+smoke&amp;qid=1621881378&amp;sr=8-2">3</a>) and/or <a href="https://www.nfpa.org//-/media/Files/News-and-Research/Fire-statistics-and-reports/Detection-and-signaling/RFLowFrequencySPLReduction.ashx">low frequency</a> alarms/listeners. </span> (in addition to those under 5 and over 65, which is accounted for in the tool).</p>
+  </li>
+  <li>
+    <p><strong>Other costs and benefits:</strong> The benefits of smoke detectors beyond prevention of death-from-fire (financial<label for="30" class="margin-toggle sidenote-number"></label><input type="checkbox" id="30" class="margin-toggle" /><span class="sidenote">Alexa can be set up to listen for alarms and notify you when not at home. </span>, stress, injury) were not considered in this analysis. Some of these may have flow-through effects on longevity, productivity, subject well-being, or other metrics of interest. There may be some costs, such as stress or risks from overconfidence in detectors, that are not included as well.</p>
+  </li>
+  <li>
+    <p><strong>Valuation and Worthwhileness:</strong> While the tool returns a “Sum of Lifedays Gained” and time and monetary costs, there are a number of additional factors that can help you understand to what extent it is worthwhile to invest in smoke detectors. Some of these factors include your valuation of time while working on detectors relative to your average time spent and your projections for your valuation of time now vs. in the future. You can account for these and better understand your appropriate investment in smoke detectors by first using the <a href="https://docs.google.com/spreadsheets/d/16HR8yNeVoJYdFuYc2Oxxxhy5lkIPTV5En3ipnN3lrbU/copy">Smoke Detector Tool</a> and then adding the results to the Valuation of Time Tool. The Valuation of Time Tool will be used for a number of my derisking analyses (e.g. HPV), and most prompts will only need to be completed once, so doing so for Smoke Detectors means much less time investment for using it with my other analyses.</p>
+  </li>
+</ol>
+
+
+
+    </article>
+    <span class="print-footer">An Analysis of Smoke Detectors - Josh Jacobson</span>
+    <footer>
+<!--  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:Josh@Derisked.org"><span class="icon-mail3"></span></a></li>    
+      
+  </ul>-->
+<!--<div class="credits">
+<span>&copy; 2022 &nbsp;&nbsp;JOSH JACOBSON</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for  </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div> -->
+</footer>
+  </body>
+</html>
